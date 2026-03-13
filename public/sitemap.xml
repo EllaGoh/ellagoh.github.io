@@ -2,42 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:57405/</loc>
-    <lastmod>2026-03-13T17:08:17-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:57405/notes/set-up-hugo/</loc>
-    <lastmod>2026-03-13T17:08:17-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:57405/notes/</loc>
-    <lastmod>2026-03-13T17:08:17-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:57405/notes/2026-03-13-setup-site/</loc>
+    <loc>https://ellagoh.github.io/</loc>
     <lastmod>2026-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/writing/on-small-quiet-websites/</loc>
+    <loc>https://ellagoh.github.io/notes/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellagoh.github.io/notes/2026-03-13-setup-site/</loc>
+    <lastmod>2026-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellagoh.github.io/writing/on-small-quiet-websites/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/projects/</loc>
+    <loc>https://ellagoh.github.io/projects/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/projects/sample-project-a/</loc>
+    <loc>https://ellagoh.github.io/projects/sample-project-a/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/writing/</loc>
+    <loc>https://ellagoh.github.io/writing/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/writing/notes-on-learning-slowly/</loc>
+    <loc>https://ellagoh.github.io/writing/notes-on-learning-slowly/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/tags/</loc>
+    <loc>https://ellagoh.github.io/tags/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/tags/test/</loc>
+    <loc>https://ellagoh.github.io/tags/test/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/writing/what-i-pay-attention-to-online/</loc>
+    <loc>https://ellagoh.github.io/writing/what-i-pay-attention-to-online/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57405/categories/</loc>
+    <loc>https://ellagoh.github.io/categories/</loc>
   </url>
 </urlset>
