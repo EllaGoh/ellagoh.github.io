@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Ella Goh</title>
-    <link>http://localhost:57130/tags/test/</link>
+    <link>http://localhost:57405/tags/test/</link>
     <description>Recent content in Test on Ella Goh</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57130/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57405/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on learning slowly</title>
-      <link>http://localhost:57130/writing/notes-on-learning-slowly/</link>
+      <link>http://localhost:57405/writing/notes-on-learning-slowly/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57130/writing/notes-on-learning-slowly/</guid>
+      <guid>http://localhost:57405/writing/notes-on-learning-slowly/</guid>
       <description>&lt;p&gt;Most advice about learning sounds like a race: move fast, consume more, never fall behind. But in real life, the things that stay with me rarely come from rushing. They come from the days when I sit with one idea a little longer than necessary.&lt;/p&gt;&#xA;&lt;p&gt;Learning slowly doesn’t mean avoiding hard work. It means accepting that depth has a different tempo than urgency. Reading the same paragraph twice can feel inefficient, but sometimes that’s how understanding actually arrives — not as a flash, but as a quiet click after the tenth repetition.&lt;/p&gt;</description>
     </item>
   </channel>

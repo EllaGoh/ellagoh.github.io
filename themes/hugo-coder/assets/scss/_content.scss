@@ -1,0 +1,363 @@
+.content {
+  flex: 1;
+  display: flex;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+  @media only screen and (max-width: 768px) {
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+  }
+
+  header {
+    margin-top: 6.4rem;
+    margin-bottom: 3.2rem;
+
+    h1 {
+      font-size: 4.2rem;
+      line-height: 4.6rem;
+      margin: 0;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 4rem;
+        line-height: 4.4rem;
+      }
+    }
+  }
+
+  article {
+    a:where(.external-link):not(:has(img)):after {
+      @extend %fa-icon;
+      @extend .fa-solid;
+      content: fa-content($fa-var-external-link);
+      padding-left: 0.5em;
+      font-size: 0.75em;
+      display: inline;
+    }
+
+    details {
+      summary {
+        cursor: pointer;
+      }
+    }
+
+    footer {
+      margin-top: 4rem;
+
+      .see-also {
+        margin: 3.2rem 0;
+
+        h3 {
+          margin: 3.2rem 0;
+        }
+      }
+    }
+
+    p {
+      text-align: justify;
+      text-justify: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+  }
+
+  .post {
+    .post-title {
+      margin-bottom: 0.75em;
+    }
+
+    .post-meta {
+      i {
+        text-align: center;
+        width: 1.6rem;
+        margin-left: 0;
+        margin-right: 0.5rem;
+      }
+
+      .date {
+        .posted-on {
+          margin-left: 0;
+          margin-right: 1.5rem;
+        }
+      }
+
+      .tags {
+        .tag {
+          display: inline-block;
+          padding: 0.3rem 0.6rem;
+          background-color: $alt-bg-color;
+          border-radius: 0.6rem;
+          line-height: 1.5em;
+
+          a {
+            color: $fg-color;
+          }
+
+          a:active {
+            color: $fg-color;
+          }
+        }
+      }
+    }
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  figcaption p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+}
+
+.avatar img {
+  width: 20rem;
+  height: auto;
+  border-radius: 50%;
+
+  @media only screen and (max-width: 768px) {
+    width: 17rem;
+  }
+}
+
+.list {
+  .list-kicker {
+    font-family: $code-font-family;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $darker-alt-bg-color;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .list-intro {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: $fg-color;
+    max-width: 65rem;
+    margin-bottom: 6rem;
+  }
+
+  ul.archive-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .archive-year {
+      font-family: $code-font-family;
+      font-size: 1.3rem;
+      letter-spacing: 0.25em;
+      color: $darker-alt-bg-color;
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+      padding: 0;
+      border: none;
+      display: block;
+    }
+
+    li.archive-item {
+      padding: 2rem 2.5rem;
+      background-color: $alt-bg-color;
+      border-radius: 0.8rem;
+      margin-bottom: 1.5rem;
+      border: none;
+      display: grid !important;
+      grid-template-areas: 
+        "title date"
+        "summary summary";
+      grid-template-columns: 1fr auto;
+      align-items: baseline;
+      gap: 0.8rem 2rem;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      @media only screen and (max-width: 768px) {
+        grid-template-areas: 
+          "title"
+          "date"
+          "summary";
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .archive-title {
+    grid-area: title;
+    font-family: $font-family;
+    font-size: 2.0rem;
+    font-weight: 400;
+    color: $fg-color;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    margin: 0;
+
+    &:hover, &:focus {
+      color: $link-color;
+    }
+  }
+
+  .archive-meta-date {
+    grid-area: date;
+    font-family: $code-font-family;
+    font-size: 1.4rem;
+    color: $darker-alt-bg-color;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: right;
+  }
+
+  .archive-summary {
+    grid-area: summary;
+    font-family: $font-family;
+    font-size: 1.5rem;
+    line-height: 1.65;
+    color: #888888;
+    margin: 0;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 1px solid rgba(100, 100, 100, 0.15);
+    border-radius: 1.2rem;
+    background-color: $bg-color;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none !important;
+    color: inherit;
+
+    &:hover, &:focus {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .project-kicker {
+    font-family: $code-font-family;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: $link-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-title {
+    font-family: $serif-font-family;
+    font-size: 2.4rem;
+    color: $alt-fg-color;
+    margin: 0 0 1rem 0;
+    border: none;
+  }
+
+  .project-summary {
+    font-family: $font-family;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: $fg-color;
+    flex-grow: 1;
+    margin: 0 0 2.5rem 0;
+  }
+
+  .project-link {
+    font-family: $code-font-family;
+    font-size: 1.4rem;
+    color: $alt-fg-color;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .about {
+    text-align: center;
+
+    h1 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 3rem 0 1rem 0;
+      padding: 0;
+      cursor: pointer;
+
+      li {
+        display: inline-block;
+        position: relative;
+
+        a {
+          color: $fg-color;
+          text-transform: uppercase;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          font-size: 1.6rem;
+
+          &:hover,
+          &:focus {
+            color: $link-color;
+          }
+
+          @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .error {
+    text-align: center;
+
+    h1 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-size: 4.6rem;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 3.2rem;
+      }
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 3.2rem;
+      font-size: 3.2rem;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}

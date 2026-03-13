@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Ella Goh</title>
-    <link>http://localhost:56176/notes/</link>
+    <link>http://localhost:57405/notes/</link>
     <description>Recent content in Notes on Ella Goh</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 13 Mar 2026 17:08:17 -0500</lastBuildDate>
-    <atom:link href="http://localhost:56176/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57405/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hi You!</title>
-      <link>http://localhost:56176/notes/set-up-hugo/</link>
+      <link>http://localhost:57405/notes/set-up-hugo/</link>
       <pubDate>Fri, 13 Mar 2026 17:08:17 -0500</pubDate>
-      <guid>http://localhost:56176/notes/set-up-hugo/</guid>
+      <guid>http://localhost:57405/notes/set-up-hugo/</guid>
       <description>&lt;p&gt;this is my first&lt;/p&gt;</description>
     </item>
     <item>
       <title>Set up this personal site</title>
-      <link>http://localhost:56176/notes/2026-03-13-setup-site/</link>
+      <link>http://localhost:57405/notes/2026-03-13-setup-site/</link>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56176/notes/2026-03-13-setup-site/</guid>
+      <guid>http://localhost:57405/notes/2026-03-13-setup-site/</guid>
       <description>&lt;p&gt;Today I set up this personal site on GitHub Pages — a quiet place for projects, notes, and the occasional longer piece of writing.&lt;/p&gt;</description>
     </item>
   </channel>
