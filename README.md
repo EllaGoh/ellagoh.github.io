@@ -53,6 +53,45 @@ Hugo 会在 `public/` 目录生成静态页面，把这个目录部署到 GitHub
 ## 修改内容的方式
 
 - 修改主页介绍和联系方式：编辑 `content/_index.md`。
-- 修改 Notes / Writing / Projects 的文案：分别编辑 `content/notes/`、`content/writing/`、`content/projects/` 下的 Markdown 文件或新增文件。
+- 修改内容列表引导文案：分别编辑 `content/notes/_index.md`、`content/writing/_index.md`、`content/projects/_index.md`。
 - 修改导航和社交链接：编辑根目录的 `hugo.toml` 中对应的 `[[menu.main]]` 和 `[[params.social]]` 配置。
-- 调整样式（在 hugo-coder 基础上的微调）：编辑 `assets/custom.scss`。
+- 调整排版样式（已与原主题高度融合）：目前所有的“复古 + 禅”样式已被内置进 `themes/hugo-coder/assets/scss/` 中进行魔改，不再依赖外置独立 customCSS。
+
+## 常用 Hugo 命令指南
+
+### 1. 新建一篇文章 (Writing / Notes / Projects)
+
+如果你想写一篇新的长文，可以直接使用 `hugo new` 命令，它会帮你自动生成带有标准格式（如时间和标题）的文件：
+
+```bash
+# 新建一篇长文 (Writing)
+hugo new content/writing/my-new-post.md
+
+# 新建一条短记 (Notes)
+hugo new content/notes/my-new-note.md
+
+# 新建一个项目展示 (Projects)
+hugo new content/projects/my-new-project.md
+```
+
+执行后，你去打开生成的文件，只需完善正文以及顶部的 `title` 和 `description` 即可。
+
+### 2. 启动本地预览服务器
+
+如果你想一边写一边看网页效果，运行这个命令并保持终端不要关闭：
+
+```bash
+hugo server -D
+```
+
+> `-D` (或 `--buildDrafts`) 参数的作用是：同时渲染并显示你标记为草稿 (`draft: true`) 的文章。一旦文章写好了，切记把顶部信息的 `draft: true` 删除掉。
+
+### 3. 打包并生成最终静态网页
+
+当你写完文章，觉得完全没问题并准备发布时，执行打包命令：
+
+```bash
+hugo --gc --cleanDestinationDir
+```
+
+这会帮你把所有最新内容转化为 HTML 文件并放进 `public/` 目录下（同时自动清空旧版本的废弃垃圾）。直接把这个被打包好的项目推送给 GitHub Pages 就可以上线了。
