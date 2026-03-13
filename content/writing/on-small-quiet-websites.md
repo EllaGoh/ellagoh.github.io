@@ -1,6 +1,7 @@
-Title: On building small, quiet websites
-Subtitle: Why I like calm pages, slow updates, and keeping a tiny corner of the internet for myself.
-Meta: 2026 · about 5 min read
+---
+title: "On building small, quiet websites"
+description: "Why I like calm pages, slow updates, and keeping a tiny corner of the internet for myself."
+date: 2026-01-01
 ---
 
 The internet is loud by default. Most pages are trying to keep you scrolling, clicking, or signing up for something. A small, quiet website feels like the opposite of that — almost like walking into a side street café after leaving a busy road.
@@ -12,4 +13,3 @@ Technically, there’s nothing fancy happening here: just static files, a bit of
 A small, quiet site doesn’t have to be perfect. It just needs to feel honest. If over time the design drifts or the words no longer fit, I can change them. The cost of editing a simple page is low, which makes it easier to keep this place close to who I am right now.
 
 For now, this site is exactly that: a gentle container for projects, notes, and writing. It won’t trend anywhere, and that’s a feature, not a bug.
-

@@ -1,6 +1,7 @@
-Title: What I pay attention to online
-Subtitle: A small list of what still feels worth noticing on the internet.
-Meta: 2025 · about 6 min read
+---
+title: "What I pay attention to online"
+description: "A small list of what still feels worth noticing on the internet."
+date: 2025-01-01
 ---
 
 Attention is the real currency online. Every timeline, feed, and notification is a bid for it. If I don’t choose what I care about, something else will choose for me — usually whatever is the loudest.
@@ -12,4 +13,3 @@ I’m less interested in hot takes and more drawn to things that age well: long-
 One trick that helps is asking: “Will I care about this next week?” If the answer is no, I try not to tap. I don’t always succeed — the scroll is powerful — but the question itself slows me down long enough to notice the choice.
 
 This little site is part of that experiment. By writing here, I’m nudging my own attention back toward slower spaces: places where a single page can be enough, and where the goal isn’t to keep you here, just to keep you company for a few minutes.
-

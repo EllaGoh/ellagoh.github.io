@@ -1,0 +1,49 @@
+baseURL = "https://ellagoh.github.io/"
+title = "Ella Goh"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+canonifyURLs = true
+
+[params]
+author = "Ella Goh"
+info = "Building small, quiet corners of the internet."
+description = "Personal site for projects, notes, and writing."
+avatarurl = "/images/avatar.png"
+keywords = ["blog", "notes", "projects", "writing"]
+dateFormat = "2006-01-02"
+hideFooter = false
+
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 2
+url = "https://github.com/ellagoh"
+
+[[menu.main]]
+name = "About"
+weight = 1
+url = "/"
+
+[[menu.main]]
+name = "Projects"
+weight = 2
+url = "/projects/"
+
+[[menu.main]]
+name = "Writing"
+weight = 3
+url = "/writing/"
+
+[[menu.main]]
+name = "Notes"
+weight = 4
+url = "/notes/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

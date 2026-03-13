@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ella Goh</title>
+    <link>http://localhost:56176/</link>
+    <description>Recent content on Ella Goh</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:56176/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set up this personal site</title>
+      <link>http://localhost:56176/notes/2026-03-13-setup-site/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56176/notes/2026-03-13-setup-site/</guid>
+      <description>&lt;p&gt;Today I set up this personal site on GitHub Pages — a quiet place for projects, notes, and the occasional longer piece of writing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On building small, quiet websites</title>
+      <link>http://localhost:56176/writing/on-small-quiet-websites/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56176/writing/on-small-quiet-websites/</guid>
+      <description>&lt;p&gt;The internet is loud by default. Most pages are trying to keep you scrolling, clicking, or signing up for something. A small, quiet website feels like the opposite of that — almost like walking into a side street café after leaving a busy road.&lt;/p&gt;&#xA;&lt;p&gt;When I think about what I want from my own site, it’s less about reach and more about tone. I want a place where someone can land, read a few lines, and feel their shoulders drop a little. That means fewer colors, fewer boxes, and enough space around the words so they can breathe.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sample project A</title>
+      <link>http://localhost:56176/projects/sample-project-a/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56176/projects/sample-project-a/</guid>
+      <description>&lt;p&gt;This is a placeholder description for a project. Replace this text with a short story about what you built, why you made it, and what you learned.&lt;/p&gt;&#xA;&lt;p&gt;You can also add lists, code blocks, or images in Markdown if you’d like:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What the project does&lt;/li&gt;&#xA;&lt;li&gt;The tools you used&lt;/li&gt;&#xA;&lt;li&gt;One thing you might change next time&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Notes on learning slowly</title>
+      <link>http://localhost:56176/writing/notes-on-learning-slowly/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56176/writing/notes-on-learning-slowly/</guid>
+      <description>&lt;p&gt;Most advice about learning sounds like a race: move fast, consume more, never fall behind. But in real life, the things that stay with me rarely come from rushing. They come from the days when I sit with one idea a little longer than necessary.&lt;/p&gt;&#xA;&lt;p&gt;Learning slowly doesn’t mean avoiding hard work. It means accepting that depth has a different tempo than urgency. Reading the same paragraph twice can feel inefficient, but sometimes that’s how understanding actually arrives — not as a flash, but as a quiet click after the tenth repetition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What I pay attention to online</title>
+      <link>http://localhost:56176/writing/what-i-pay-attention-to-online/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56176/writing/what-i-pay-attention-to-online/</guid>
+      <description>&lt;p&gt;Attention is the real currency online. Every timeline, feed, and notification is a bid for it. If I don’t choose what I care about, something else will choose for me — usually whatever is the loudest.&lt;/p&gt;&#xA;&lt;p&gt;These days, I try to keep my list of “worth noticing” very small: people I genuinely know, writers who make me think slower, and projects that feel like they were made by hand instead of by committee. That usually means fewer accounts, fewer platforms, and more direct subscriptions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
