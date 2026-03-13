@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on Ella Goh</title>
+    <link>https://ellagoh.github.io/writing/</link>
+    <description>Recent content in Writing on Ella Goh</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ellagoh.github.io/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Illustrated Glossary</title>
+      <link>https://ellagoh.github.io/writing/englishlearning/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://ellagoh.github.io/writing/englishlearning/</guid>
+      <description>&lt;p&gt;Instead of memorising word lists, I want to collect small scenes: a snapshot, a few words, and a story about where I met them. Each image comes from something I actually did or saw – like today’s bouldering session – so the vocabulary is tied to a real feeling, not just a dictionary entry.&lt;/p&gt;&#xA;&lt;p&gt;Right now, this page is just a starting point. Over time, I’d like to add more scenes from different parts of my life:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<section class="container list">
+  <header>
+    <p class="list-kicker">
+      {{- if eq .Kind "section" -}}
+        ARCHIVE
+      {{- else -}}
+        {{- i18n (printf "%s" (lower .Title)) | default (upper .Title) -}}
+      {{- end -}}
+    </p>
+    <h1 class="title">
+      {{- if eq .Kind "term" -}}
+        {{- i18n .Data.Plural 1 | title -}}
+        {{- print ": " -}}
+      {{- end -}}
+      {{- i18n (lower .Title) | default .Title | title -}}
+    </h1>
+  </header>
+  {{ with .Content }}
+    <p class="list-intro">
+      {{ . | markdownify }}
+    </p>
+  {{ end }}
+
+  {{ $.Scratch.Set "lastYear" "" }}
+  <ul class="archive-list">
+    {{ range .Paginator.Pages.ByDate.Reverse }}
+      {{ $year := (.Date | time.Format "2006") }}
+      {{ if ne $year ($.Scratch.Get "lastYear") }}
+        <li class="archive-year">{{ $year }}</li>
+        {{ $.Scratch.Set "lastYear" $year }}
+      {{ end }}
+      <li class="archive-item">
+        <a class="archive-title" href="{{ .Params.externalLink | default .RelPermalink }}">
+          {{ .Title }}
+        </a>
+        <span class="archive-meta-date">
+          {{ .Date | time.Format "Jan 02" }}
+        </span>
+        {{ if .Description }}
+          <p class="archive-summary">{{ .Description }}</p>
+        {{ else }}
+          <p class="archive-summary">{{ .Summary | plainify | truncate 100 }}</p>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>

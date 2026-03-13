@@ -1,0 +1,33 @@
+{{ define "title" }}
+  {{- i18n (lower .Title) | default .Title | title }} · {{ .Site.Title -}}
+{{ end }}
+{{ define "content" }}
+<section class="container list list-notes">
+  <header>
+    <p class="list-kicker">ARCHIVE</p>
+    <h1 class="title">{{ i18n (lower .Title) | default .Title | title }}</h1>
+  </header>
+  {{ with .Content }}
+    <p class="list-intro">
+      {{ . | markdownify }}
+    </p>
+  {{ end }}
+
+  <div class="notes-fragments">
+    {{ range .Paginator.Pages.ByDate.Reverse }}
+      <article class="note-fragment">
+        <header class="note-fragment-header">
+          <h2 class="note-fragment-title">{{ .Title }}</h2>
+          <time class="note-fragment-date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date | time.Format "Jan 02, 2006" }}
+          </time>
+        </header>
+        <div class="note-fragment-body">
+          {{ .RawContent | markdownify }}
+        </div>
+      </article>
+    {{ end }}
+  </div>
+  {{ partial "pagination.html" . }}
+</section>
+{{ end }}

@@ -1,0 +1,44 @@
+{{ define "title" }} {{- i18n (lower .Title) | default .Title | title }} · {{ .Site.Title -}} {{ end }}
+
+{{ define "content" }}
+<section class="container list">
+  <header>
+    <p class="list-kicker">FEATURED WORK</p>
+    <h1 class="title">{{ .Title }}</h1>
+  </header>
+
+  {{ with .Content }}
+  <p class="list-intro">{{ . | markdownify }}</p>
+  {{ end }}
+
+  <div class="project-grid">
+    {{ range .Paginator.Pages.ByDate.Reverse }}
+    <a
+      class="project-card"
+      href="{{ .Params.externalLink | default .RelPermalink }}"
+    >
+      {{ if .Params.tags }}
+      <span class="project-kicker"
+        >{{ delimit .Params.tags " / " | upper }}</span
+      >
+      {{ else }}
+      <span class="project-kicker">PROJECT</span>
+      {{ end }}
+      <h2 class="project-title">{{ .Title }}</h2>
+      <p class="project-summary">
+        {{ if .Description }}
+          {{ .Description }}
+        {{ else }}
+          {{ .Summary | plainify | truncate 100 }}
+        {{ end }}
+      </p>
+      <span class="project-link">
+        {{ if .Params.linkText }}{{ .Params.linkText }}{{ else }}Explore →{{ end }}
+      </span>
+    </a>
+    {{ end }}
+  </div>
+
+  {{ partial "pagination.html" . }}
+</section>
+{{ end }}
