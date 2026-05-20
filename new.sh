@@ -23,8 +23,16 @@ DATE=$(date +%Y-%m-%d)
 TIME=$(date +%H:%M)
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
 
-SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | \
-  sed 's/[^a-z0-9]/-/g' | sed 's/-\{2,\}/-/g' | sed 's/^-\|-$//g')
+# 用标题生成 slug（保留中文；英文转小写、空格变连字符）
+SLUG=$(python3 -c "
+import re, sys
+title = sys.argv[1]
+slug = re.sub(r'\s+', '-', title.strip().lower())
+slug = re.sub(r'[^\w\-]', '', slug, flags=re.UNICODE)
+slug = re.sub(r'_', '-', slug)
+slug = re.sub(r'-+', '-', slug).strip('-')
+print(slug)
+" "$TITLE")
 [ -z "$SLUG" ] && SLUG="$TIMESTAMP"
 
 ID="${DATE}-${SLUG}"
@@ -80,3 +88,5 @@ echo "  \${EDITOR:-open} ${FILENAME}"
 echo ""
 echo "写完后发布："
 echo "  git add . && git commit -m '随笔: ${TITLE}' && git push"
+
+# python3 -m http.server 8000
